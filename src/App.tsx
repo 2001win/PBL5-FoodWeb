@@ -1,6 +1,8 @@
+import FormSignIn from './pages/authentication/components/FormSignIn';
+import FormSignUp from './pages/authentication/components/FormSignUp';
 import OverallLayout from './pages/control/OverallLayout';
 function App() {
-  return <OverallLayout />;
+  return <FormSignUp />;
 }
 
 export default App;

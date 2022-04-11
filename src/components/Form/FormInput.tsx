@@ -1,4 +1,4 @@
-import { FormControl, FormLabel, Input } from '@chakra-ui/react';
+import { FormControl, FormLabel, Input, Select} from '@chakra-ui/react';
 import React from 'react';
 
 interface UserInput {
@@ -11,7 +11,7 @@ const FormInput = React.forwardRef<HTMLInputElement, UserInput>(
     return (
       <FormControl>
         <FormLabel htmlFor={props.textLabel}>{props.textLabel}</FormLabel>
-        <Input
+        <Input 
           ref={ref}
           id={props.textLabel}
           type={props.typeInput || 'text'}

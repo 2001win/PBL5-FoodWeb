@@ -1,4 +1,4 @@
-import { FormControl } from '@chakra-ui/react';
+import { flexbox, FormControl } from '@chakra-ui/react';
 import React, { createRef } from 'react';
 
 import FormInput from '../../../components/Form/FormInput';
@@ -19,7 +19,7 @@ const FormSignIn = () => {
         textLabel={'Password'}
         typeInput={'password'}
       />
-      <FormInput textLabel="Submit" typeInput="submit" onClick={loginHandler} />
+      <FormInput  textLabel="Submit" typeInput="submit" onClick={loginHandler} />
     </FormControl>
   );
 };
