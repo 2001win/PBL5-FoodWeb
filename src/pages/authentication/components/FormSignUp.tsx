@@ -5,11 +5,13 @@ const FormSignUp = () => {
     const emailInput = createRef<HTMLInputElement>();
     const passwordInput = createRef<HTMLInputElement>();
     const comfirmInput = createRef<HTMLInputElement>();
+    const  = createRef<HTMLInputElement>();
     const loginHandler = (e: React.SyntheticEvent<HTMLInputElement>) => {
       e.preventDefault();
       console.log(emailInput.current?.value);
       console.log(passwordInput.current?.value);
     };
+    
   return (
     <FormControl>
       <FormInput ref={emailInput} textLabel={'Email'} />
